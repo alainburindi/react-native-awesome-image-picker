@@ -1,5 +1,5 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { PropsWithChildren, useState } from 'react';
+import { useState } from 'react';
 import { StyleSheet, TouchableOpacity, useColorScheme } from 'react-native';
 
 import { ThemedText } from '@/components/ThemedText';
@@ -9,7 +9,10 @@ import { Colors } from '@/constants/Colors';
 export function Collapsible({
   children,
   title,
-}: PropsWithChildren & { title: string }) {
+}: {
+  children: React.ReactNode;
+  title: string;
+}) {
   const [isOpen, setIsOpen] = useState(false);
   const theme = useColorScheme() ?? 'light';
 

@@ -89,7 +89,14 @@
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
-    ]
+    ],
+    "moduleNameMapper": {
+      "@/(.*)": [
+        "<rootDir>/example/$1"
+      ],
+      "^react-native$": "<rootDir>/node_modules/react-native",
+      "^react$": "<rootDir>/node_modules/react/index.js"
+    }
   },
   "commitlint": {
     "extends": [

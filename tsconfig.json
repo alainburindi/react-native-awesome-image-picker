@@ -2,13 +2,14 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-awesome-image-picker": ["./src/index"]
+      "react-native-awesome-image-picker": ["./src/index"],
+      "@/*": ["./example/*"],
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
+    "jsx": "react-native",
     "lib": ["esnext"],
     "module": "esnext",
     "moduleResolution": "node",
@@ -24,6 +25,5 @@
     "strict": true,
     "target": "esnext",
     "verbatimModuleSyntax": true
-  },
-  "exclude": ["example"]
+  }
 }
