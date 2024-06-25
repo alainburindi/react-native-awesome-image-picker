@@ -2,8 +2,6 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-awesome-image-picker": ["./src/index"],
-      "@/*": ["./example/*"],
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
